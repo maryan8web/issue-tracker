@@ -40,6 +40,7 @@ const Pagination = ({ itemCount, pageSize, currentPage }: Props) => {
         color="gray"
         disabled={currentPage === 1}
         onClick={() => changePage(1)}
+        className="hover:cursor-pointer disabled:cursor-not-allowed"
       >
         <DoubleArrowLeftIcon />
       </Button>
@@ -48,6 +49,7 @@ const Pagination = ({ itemCount, pageSize, currentPage }: Props) => {
         color="gray"
         disabled={currentPage === 1}
         onClick={() => changePage(currentPage - 1)}
+        className="hover:cursor-pointer disabled:cursor-not-allowed"
       >
         <ChevronLeftIcon />
       </Button>
@@ -56,6 +58,7 @@ const Pagination = ({ itemCount, pageSize, currentPage }: Props) => {
         color="gray"
         disabled={currentPage === pageCount}
         onClick={() => changePage(currentPage + 1)}
+        className="hover:cursor-pointer disabled:cursor-not-allowed"
       >
         <ChevronRightIcon />
       </Button>
@@ -64,6 +67,7 @@ const Pagination = ({ itemCount, pageSize, currentPage }: Props) => {
         color="gray"
         disabled={currentPage === pageCount}
         onClick={() => changePage(pageCount)}
+        className="hover:cursor-pointer disabled:cursor-not-allowed"
       >
         <DoubleArrowRightIcon />
       </Button>
